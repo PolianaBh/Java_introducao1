@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de validação Simples com Javascrpit</title>
+</head>
+
+<body>
+    <h1>Exemplo de validação Simples com Javascrpit</h1>
+    <label for="numero">Número:</label>
+    <input type="text" id="numero" placeholder="Digite um numero">
+
+    <button onclick="validarNumero()">Validar</button>
+
+    <script>
+        function validarNumero() {
+            //Obter o valor do campo de número
+            let numeroValue = document.getElementById("numero").value;
+            //Verificar se o campo está vazio ou não é um número
+            if (numeroValue.trim() === '' || isNaN(numeroValue)) {
+                alert("Por favor, digite um numero válido.");
+            } else {
+                alert("Número válido:" + numeroValue);
+            }
+        }
+    </script>
+
+</body>
+
+</html>

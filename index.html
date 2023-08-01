@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Input mask ()</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js"></script>
+</head>
+
+<body>
+    <h1>Exemplo de inputmask.mask()</h1>
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" placeholder="Digite o CPF">
+    <button>"Enviar>"</button>
+
+    <script>
+        // Aplicar a máscara de CPF no campo de entrada
+        Inputmask().mask(document.getElementById("cpf"), "999.999.999-99");
+    </script>
+</body>
+
+</html>
