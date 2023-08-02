@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Input mask ()</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.6/inputmask.min.js"></script>
+    <title>Exemplo de validação Simples com Javascrpit</title>
 </head>
 
 <body>
-    <h1>Exemplo de inputmask.mask()</h1>
-    <label for="cpf">CPF:</label>
-    <input type="text" name="cpf" placeholder="Digite o CPF" autocomplete="off" maxlength="14">
-       <button onclick="validarNumero()">Validar</button>
+    <h1>Exemplo de validação Simples com Javascrpit</h1>
+    <label for="numero">Número:</label>
+    <input type="text" id="numero" autocomplete="off" maxlength="14" placeholder="Digite seu CPF">
+    <input type="text" id="numero" autocomplete="off" id="RG" maxlength="11" placeholder="Digite seu RG">
+    <script src="main.js"></script>
 
+
+    <button onclick="validarNumero()">Validar</button>
+    
     <script>
-        // Aplicar a máscara de CPF no campo de entrada
-        Inputmask().mask(document.getElementById("cpf"), "999.999.999-99");
-        
+       
         function validarNumero() {
             //Obter o valor do campo de número
             let numeroValue = document.getElementById("numero").value;
@@ -29,7 +30,4 @@
             }
         }
     </script>
-    <script src="main.js"></script>
-</body>
 
-</html>
